@@ -94,68 +94,72 @@ class userCard extends StatelessWidget {
               mainAxisExtent: 260,
             ),
             itemBuilder: (context, index) {
-              return Card(
-                elevation: 10,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                      CircleAvatar(
-                          radius: 30, backgroundImage: AssetImage(uimg[index])),
-                      Text(
-                        name[index],
-                        style: const TextStyle(fontSize: 20),
-                      ),
-                      Text(
-                        country[index],
-                        style: const TextStyle(fontSize: 15),
-                      ),
-                      const Text(
-                        "كول سنتر",
-                        style: TextStyle(fontSize: 15),
-                      ),
-                      Row(
-                        children: [
-                          const SizedBox(
-                            width: 50,
-                          ),
-                          Text(
-                            coin[index],
-                            style: const TextStyle(fontSize: 15),
-                          ),
-                          const SizedBox(
-                            width: 3,
-                          ),
-                          Text(
-                            price[index],
-                            style: const TextStyle(
-                              fontSize: 15,
-                              decoration: TextDecoration.underline,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Text(
-                        date[index],
-                        style: const TextStyle(fontSize: 15),
-                      ),
-                      const SizedBox(
-                        height: 3,
-                      ),
-                      TextButton(
-                        // ignore: sort_child_properties_last
-                        child: const Text(
-                          "كشف حساب",
-                          style: TextStyle(fontSize: 14),
+              return Container(
+                height: MediaQuery.of(context).size.height * 0.48,
+                width: MediaQuery.of(context).size.width * 0.40,
+                child: Card(
+                  elevation: 6,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 28,
+                          backgroundImage: AssetImage(uimg[index]),
                         ),
-                        onPressed: () {},
-                        style: TextButton.styleFrom(
-                            foregroundColor: Colors.white,
-                            elevation: 2,
-                            backgroundColor:
-                                const Color.fromARGB(255, 33, 44, 243)),
-                      ),
-                    ],
+                        Text(
+                          name[index],
+                        ),
+                        Text(
+                          country[index],
+                        ),
+                        Text("كول سنتر"),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              color: Colors.white,
+                              height: MediaQuery.of(context).size.height * 0.04,
+                              // width: MediaQuery.of(context).size.width * 0.1,
+                              child: Text(
+                                coin[index],
+                              ),
+                            ),
+                            Container(
+                                color: Colors.white,
+                                width: MediaQuery.of(context).size.width * 0.10,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.04,
+                                child: Text(
+                                  price[index],
+                                  style: const TextStyle(
+                                    decoration: TextDecoration.underline,
+                                  ),
+                                )),
+                          ],
+                        ),
+                        Text(
+                          date[index],
+                        ),
+                        const Text('كشف حساب'),
+                        const SizedBox(
+                          height: 3,
+                        ),
+                        TextButton(
+                          // ignore: sort_child_properties_last
+                          child: const Text(
+                            "كشف حساب",
+                            style: TextStyle(fontSize: 14),
+                          ),
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              elevation: 2,
+                              backgroundColor:
+                                  const Color.fromARGB(255, 33, 44, 243)),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               );
@@ -164,3 +168,68 @@ class userCard extends StatelessWidget {
     );
   }
 }
+//  Card(
+              //   elevation: 10,
+              //   child: Padding(
+              //     padding: const EdgeInsets.all(8.0),
+              //     child: Column(
+              //       children: [
+              //         CircleAvatar(
+              //             radius: 30, backgroundImage: AssetImage(uimg[index])),
+              //         Text(
+              //           name[index],
+              //           style: const TextStyle(fontSize: 20),
+              //         ),
+              //         Text(
+              //           country[index],
+              //           style: const TextStyle(fontSize: 15),
+              //         ),
+              //         const Text(
+              //           "كول سنتر",
+              //           style: TextStyle(fontSize: 15),
+              //         ),
+              //         Row(
+              //           children: [
+              //             const SizedBox(
+              //               width: 50,
+              //             ),
+              //             Text(
+              //               coin[index],
+              //               style: const TextStyle(fontSize: 15),
+              //             ),
+              //             const SizedBox(
+              //               width: 3,
+              //             ),
+              //             Text(
+              //               price[index],
+              //               style: const TextStyle(
+              //                 fontSize: 15,
+              //                 decoration: TextDecoration.underline,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //         Text(
+              //           date[index],
+              //           style: const TextStyle(fontSize: 15),
+              //         ),
+              //         const SizedBox(
+              //           height: 3,
+              //         ),
+              //         TextButton(
+              //           // ignore: sort_child_properties_last
+              //           child: const Text(
+              //             "كشف حساب",
+              //             style: TextStyle(fontSize: 14),
+              //           ),
+              //           onPressed: () {},
+              //           style: TextButton.styleFrom(
+              //               foregroundColor: Colors.white,
+              //               elevation: 2,
+              //               backgroundColor:
+              //                   const Color.fromARGB(255, 33, 44, 243)),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // );
