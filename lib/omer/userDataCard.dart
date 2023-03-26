@@ -86,17 +86,19 @@ class userCard extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(right: 20, left: 20, top: 30),
         child: GridView.builder(
-            itemCount: 8,
+            itemCount: 2,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               crossAxisSpacing: 6,
               mainAxisSpacing: 10,
-              mainAxisExtent: 260,
+              // mainAxisExtent: 270,
             ),
             itemBuilder: (context, index) {
               return Container(
-                height: MediaQuery.of(context).size.height * 0.48,
-                width: MediaQuery.of(context).size.width * 0.40,
+                height: 200,
+                //  MediaQuery.of(context).size.height * 0.30,
+                width: 150,
+                //  MediaQuery.of(context).size.width * 0.35,
                 child: Card(
                   elevation: 6,
                   child: Padding(
@@ -141,7 +143,6 @@ class userCard extends StatelessWidget {
                         Text(
                           date[index],
                         ),
-                        const Text('كشف حساب'),
                         const SizedBox(
                           height: 3,
                         ),
@@ -168,68 +169,3 @@ class userCard extends StatelessWidget {
     );
   }
 }
-//  Card(
-              //   elevation: 10,
-              //   child: Padding(
-              //     padding: const EdgeInsets.all(8.0),
-              //     child: Column(
-              //       children: [
-              //         CircleAvatar(
-              //             radius: 30, backgroundImage: AssetImage(uimg[index])),
-              //         Text(
-              //           name[index],
-              //           style: const TextStyle(fontSize: 20),
-              //         ),
-              //         Text(
-              //           country[index],
-              //           style: const TextStyle(fontSize: 15),
-              //         ),
-              //         const Text(
-              //           "كول سنتر",
-              //           style: TextStyle(fontSize: 15),
-              //         ),
-              //         Row(
-              //           children: [
-              //             const SizedBox(
-              //               width: 50,
-              //             ),
-              //             Text(
-              //               coin[index],
-              //               style: const TextStyle(fontSize: 15),
-              //             ),
-              //             const SizedBox(
-              //               width: 3,
-              //             ),
-              //             Text(
-              //               price[index],
-              //               style: const TextStyle(
-              //                 fontSize: 15,
-              //                 decoration: TextDecoration.underline,
-              //               ),
-              //             ),
-              //           ],
-              //         ),
-              //         Text(
-              //           date[index],
-              //           style: const TextStyle(fontSize: 15),
-              //         ),
-              //         const SizedBox(
-              //           height: 3,
-              //         ),
-              //         TextButton(
-              //           // ignore: sort_child_properties_last
-              //           child: const Text(
-              //             "كشف حساب",
-              //             style: TextStyle(fontSize: 14),
-              //           ),
-              //           onPressed: () {},
-              //           style: TextButton.styleFrom(
-              //               foregroundColor: Colors.white,
-              //               elevation: 2,
-              //               backgroundColor:
-              //                   const Color.fromARGB(255, 33, 44, 243)),
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // );

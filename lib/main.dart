@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 
 import 'omer/cargoCompany.dart';
 import 'omer/confirmPage.dart';
+import 'omer/newPageaddEmployd/home.dart';
 import 'omer/tablePage.dart';
 import 'omer/userDataCard.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: cargo(),
+      home: home(),
     );
   }
 }
