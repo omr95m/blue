@@ -86,7 +86,7 @@ class userCard extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(right: 20, left: 20, top: 30),
         child: GridView.builder(
-            itemCount: 2,
+            itemCount: 8,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               crossAxisSpacing: 6,
@@ -95,10 +95,12 @@ class userCard extends StatelessWidget {
             ),
             itemBuilder: (context, index) {
               return Container(
-                height: 200,
-                //  MediaQuery.of(context).size.height * 0.30,
-                width: 150,
-                //  MediaQuery.of(context).size.width * 0.35,
+                height:
+                    // 200,
+                    MediaQuery.of(context).size.height * 0.30,
+                width:
+                    // 150,
+                    MediaQuery.of(context).size.width * 0.35,
                 child: Card(
                   elevation: 6,
                   child: Padding(
@@ -119,6 +121,9 @@ class userCard extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            const SizedBox(
+                              width: 7,
+                            ),
                             Container(
                               color: Colors.white,
                               height: MediaQuery.of(context).size.height * 0.04,
