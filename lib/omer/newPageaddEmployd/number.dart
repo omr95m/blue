@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class number extends StatelessWidget {
   const number({
     super.key,
@@ -17,7 +18,8 @@ class number extends StatelessWidget {
         child: TextFormField(
           decoration: InputDecoration(
             hintText: " رقم الهوية أو الإقامة",
-            hintStyle: TextStyle(color: Colors.black),
+            hintStyle: const TextStyle(
+                color: Colors.black, fontSize: 20, fontWeight: FontWeight.w500),
             focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(width: 1, color: Colors.blue)),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),

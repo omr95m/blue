@@ -17,7 +17,7 @@ class userN_3 extends StatelessWidget {
         child: TextFormField(
           decoration: InputDecoration(
             hintText: " سبب الخصم",
-            hintStyle: TextStyle(color: Colors.black),
+            hintStyle: const TextStyle(color: Colors.black),
             focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(width: 1, color: Colors.blue)),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),

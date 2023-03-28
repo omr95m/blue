@@ -11,6 +11,7 @@ import 'descount.dart';
 import 'discountReson.dart';
 import 'name.dart';
 
+// ignore: camel_case_types
 class home2 extends StatelessWidget {
   const home2({super.key});
 
@@ -36,10 +37,10 @@ class home2 extends StatelessWidget {
       body: ListView(
         children: [
           Column(
-            children: [
+            children: const [
               Padding(
                 padding: EdgeInsets.only(top: 10.0, right: 8, left: 8),
-                child: const userN_1(),
+                child: userN_1(),
               ),
               userN_2(),
               userN_3(),

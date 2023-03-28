@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class study extends StatelessWidget {
   const study({
     super.key,
@@ -17,7 +18,8 @@ class study extends StatelessWidget {
         child: TextFormField(
           decoration: InputDecoration(
             hintText: " المستوى الدارسي",
-            hintStyle: TextStyle(color: Colors.black),
+            hintStyle: const TextStyle(
+                color: Colors.black, fontSize: 20, fontWeight: FontWeight.w500),
             focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(width: 1, color: Colors.blue)),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),

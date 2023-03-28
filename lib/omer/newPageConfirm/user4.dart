@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class userN_4 extends StatelessWidget {
   const userN_4({
     super.key,
@@ -16,7 +17,7 @@ class userN_4 extends StatelessWidget {
         child: TextFormField(
           decoration: InputDecoration(
             hintText: " السلفة",
-            hintStyle: TextStyle(color: Colors.black),
+            hintStyle: const TextStyle(color: Colors.black),
             focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(width: 1, color: Colors.blue)),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),

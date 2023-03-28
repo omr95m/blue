@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import 'omer/_NewUserCard/newUserCard.dart';
+import 'omer/bross.dart';
 import 'omer/cargoCompany.dart';
 import 'omer/confirmPage.dart';
 import 'omer/newPageConfirm/home2.dart';
@@ -23,7 +24,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyWidget(),
+      home: home(
+        title: '',
+      ),
     );
   }
 }

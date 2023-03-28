@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class userN_2 extends StatelessWidget {
   const userN_2({
     super.key,

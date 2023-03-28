@@ -17,7 +17,9 @@ class jobe extends StatelessWidget {
         child: TextFormField(
           decoration: InputDecoration(
             hintText: " المسمى الوظيفي",
-            hintStyle: TextStyle(color: Colors.black),
+            // ignore: prefer_const_constructors
+            hintStyle: TextStyle(
+                color: Colors.black, fontSize: 20, fontWeight: FontWeight.w500),
             focusedBorder: const OutlineInputBorder(
                 borderSide: BorderSide(width: 1, color: Colors.blue)),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),

@@ -4,10 +4,10 @@
 // ignore: file_names
 // ignore: file_names
 // ignore: file_names
+// ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
+// ignore: camel_case_types, must_be_immutable
 class cargo extends StatelessWidget {
   List country = [
     "العراق",
