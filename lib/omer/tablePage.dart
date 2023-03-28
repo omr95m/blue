@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
+// ignore: camel_case_types
 class table extends StatelessWidget {
   const table({super.key});
 
@@ -16,7 +16,7 @@ class table extends StatelessWidget {
         title: Text(
           "تقارير الحوالات",
           style: const TextStyle(
-              fontSize: 20, color: Color.fromARGB(255, 52, 51, 51)),
+              fontSize: 22, color: Color.fromARGB(255, 52, 51, 51)),
         ),
         leading: const Icon(
           Icons.list_alt,
@@ -30,7 +30,7 @@ class table extends StatelessWidget {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [
+              children: const [
                 Card(
                   // shadowColor: Colors.black,
                   elevation: 10,
